@@ -1,0 +1,9 @@
+PROGRAM test
+VAR n:INT
+FUNCTION fib (i:INT , j:INT):INT 
+BEGIN IF n = 0 THEN RETURN i
+
+ELSE IF n = 1 THEN RETURN j
+ELSE BEGIN n = n-1; fib (j, i+j) END
+
+END; 
